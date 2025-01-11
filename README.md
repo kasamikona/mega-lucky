@@ -9,7 +9,7 @@ and MIDI in/out through additional 3.5mm TRS jacks.
 The line-level audio output is amplified from the DAC output directly.
 The DAC is stereo but the built-in volume pot is only mono, so I have chosen to bypass the pot for line-out.
 In the future I may look into ways of including the pot without significant physical mods.
-There are option jumpers to filter out strong bass and to boost the volume slightly.  
+There are option jumpers to filter out the strong bass designed for the internal speaker.  
 
 ## Power
 The power input intercepts the battery connector to allow external 6VDC as an alternative.
@@ -38,7 +38,7 @@ For now some rough steps:
 - Wire the MIDI pads to the relevant test points\*\*.
 - Solder remaining 6 pads to the adjacent pads/pins.
 - Resolder speaker wires or add some kind of connector.
-- Solder the HIBASS or LOUD option jumpers as desired.
+- Solder the `HIBASS` option jumper if desired. DO NOT set the `LOUD` jumpers on v1.0 boards.
 - Solder MIDI type jumpers\* for your adapters.
 - Extend the battery cable if necessary to reach the new location. Don't plug into old location.\*\*\*
 
@@ -48,16 +48,17 @@ Alternative type B (Arturia, Novation etc).
 You may need extra wire clippings to bridge the jumpers for type B.  
 
 \*\* MIDI test points (will add photos later):
-Below the big `DY798` text, the second test point down is MIDI out (to M.TX).
-Further down are 2 more points, furthest to the right is MIDI in (to M.RX).  
+Below the big `DY798` text, the second test point down is MIDI out (to `M.TX`).
+Further down are 2 more points, furthest to the right is MIDI in (to `M.RX`).  
 
 \*\*\* Battery connector safety:
 The original battery connector pads are not disconnected when external DC is used.
 Using these may cause extensive damage if external DC is connected with batteries in place.
-You must plug the battery cable into the new location on the mod board instead.
+You must plug the battery cable into the new location on the mod board instead.  
 
 ## PCB assembly notes
 - Clean out castellated pads with tweezers if produced the cheap way (i.e. not paying for special routing).
 - Shave the top-front straight edge of the TRS connectors if new to ensure a proper fit.
 - You may wish to leave some connector pins unsoldered to allow realigning during installation.
-- Don't populate Q1-Q3, R25-R28, these are experimental alternative MIDI out driver.  
+- Don't populate Q1-Q3, R25-R28, these are experimental alternative MIDI out driver.
+- DO NOT set the `LOUD` jumpers on v1.0 boards, this is broken. Leave R19-R22 & C13 unpopulated.
