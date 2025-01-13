@@ -28,7 +28,7 @@ A proper visual installation guide will be made once the full functionality of t
 
 For now some rough steps:
 - Desolder speaker wires, take the main board out.
-- Remove two mixing resistors R10, R45.
+- Remove two mixing resistors R10,R45 from the main board.
 - Add two wires and optional shield to the DAC (IC3) output pins (L closest to pot).
 - If reusing original battery connector, desolder it and install on mod board, otherwise use new connector.
 - Use the 3D-printed drill guide to mark and drill holes (6.5-7mm for TRS, 8-9mm for DC).
@@ -38,14 +38,14 @@ For now some rough steps:
 - Wire the MIDI pads to the relevant test points\*\*.
 - Solder remaining 6 pads to the adjacent pads/pins.
 - Resolder speaker wires or add some kind of connector.
-- Solder the `HIBASS` option jumper if desired. DO NOT set the `LOUD` jumpers on v1.0 boards.
+- Solder the `HI-BASS` option jumper if desired. DO NOT set the `LOUD` jumpers on v1.0 boards.
 - Solder MIDI type jumpers\* for your adapters.
 - Extend the battery cable if necessary to reach the new location. Don't plug into old location.\*\*\*
 
 \* MIDI TRS type:
 Recommended type A (MIDI standard, KORG, Akai, Make Noise etc).
 Alternative type B (Arturia, Novation etc).
-You may need extra wire clippings to bridge the jumpers for type B.  
+You may need extra wire clippings to bridge the jumpers for type B on v1.0 boards.  
 
 \*\* MIDI test points (will add photos later):
 Below the big `DY798` text, the second test point down is MIDI out (to `M.TX`).
