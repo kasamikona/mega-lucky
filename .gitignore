@@ -5,6 +5,10 @@ gerbers/
 # 3D generated data
 *.stl
 
+# Extra files
+\#auto_saved_file\s#
+
+
 
 # For PCBs designed using KiCad: https://www.kicad.org/
 # Format documentation: https://kicad.org/help/file-formats/
